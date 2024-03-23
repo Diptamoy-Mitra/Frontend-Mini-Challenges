@@ -17,3 +17,5 @@ export default function LearnJS() {
     </>
   )
 }
+
+// JSX--> javascript XML

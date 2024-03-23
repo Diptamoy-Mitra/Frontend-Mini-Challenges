@@ -1,0 +1,11 @@
+
+Notes all actions:
+
+1. Add Todo 
+2. Search actions 
+3. All 
+4. Completed 
+5. Incompleted
+6. Toggle 
+7. Delete
+8. Make all completed
