@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    /* Adding background image and animation */
+    background-image: url('bird.png'); /* Replace 'bird.png' with your bird image file */
+    background-repeat: repeat-x;
+    animation: birdAnimation 60s linear infinite; /* Adjust duration as needed */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+}
+#vantajs {
+    width: auto; height: 100vh; margin-bottom: 10px;
+  }
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button {
+    animation: buttonAnimation 2s infinite;
+}
+
+/* Bird Animation */
+@keyframes birdAnimation {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}

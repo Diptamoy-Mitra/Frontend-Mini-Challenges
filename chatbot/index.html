@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chatbot Javascript</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="popup" onclick="toggleChatbot()">Chat
+        <span class="popuptext" id="myPopup">Click to open</span>
+    </div>
+
+    <div class="chatBot" id="chatBot">
+        <header>
+            <span id="cross" onclick="toggleChatbot()">X</span>
+        </header>
+        <div class="glass">
+            <h1>Hi there 👋<br>How can I help you today?</h1>
+            <div id="chatLog" class="chat-log"></div>
+            <div class="input">
+                <input
+                    type="text"
+                    id="userBox"
+                    onkeydown="if(event.keyCode == 13){ talk() }"
+                    placeholder="Type your question"
+                />
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
